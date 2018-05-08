@@ -1,17 +1,17 @@
-package boundary;
+package bank.boundary;
 
-import controllers.CallRequestController;
+import bank.controllers.CallRequestController;
+import bank.entities.User;
 
-public class CallRequest {
+import javax.swing.*;
+
+public class CallRequest extends JFrame {
 
 	public CallRequestController mCallRequestController;
 
-	public CallRequest(){
-
-	}
-
-	public void finalize() throws Throwable {
-
+	public CallRequest(User user){
+		super(user.getName());
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 	public void getAnswerFromCreditDepartment(){

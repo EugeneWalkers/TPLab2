@@ -1,0 +1,6 @@
+client1:1234:client
+client2:12341234:client
+clerk1:12345:clerk
+referent1:123456:referent
+bankemployee1:1234567:employee
+inspector1:12345678:inspector

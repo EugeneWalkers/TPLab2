@@ -1,7 +1,7 @@
-package controllers;
+package bank.controllers;
 
-import boundary.DataAccessor;
-import boundary.AcceptCopyOfTheRequest;
+import bank.boundary.DataAccessor;
+import bank.boundary.AcceptCopyOfTheRequest;
 
 public class AcceptCopyOfTheRequestController {
 
@@ -11,11 +11,6 @@ public class AcceptCopyOfTheRequestController {
 	public AcceptCopyOfTheRequestController(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
 	public void selectLoanRequest(){
 
 	}

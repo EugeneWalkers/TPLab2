@@ -1,7 +1,7 @@
-package controllers;
+package bank.controllers;
 
-import boundary.DataAccessor;
-import boundary.EditRequest;
+import bank.boundary.DataAccessor;
+import bank.boundary.EditRequest;
 
 public class EditRequestController {
 
@@ -12,9 +12,6 @@ public class EditRequestController {
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
 	public void SaveLoanRequest(){
 
 	}

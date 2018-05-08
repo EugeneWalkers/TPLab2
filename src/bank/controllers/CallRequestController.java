@@ -1,7 +1,7 @@
-package controllers;
+package bank.controllers;
 
-import boundary.DataAccessor;
-import boundary.CallRequest;
+import bank.boundary.DataAccessor;
+import bank.boundary.CallRequest;
 
 public class CallRequestController {
 
@@ -9,10 +9,6 @@ public class CallRequestController {
 	public CallRequest mCallRequest;
 
 	public CallRequestController(){
-
-	}
-
-	public void finalize() throws Throwable {
 
 	}
 
