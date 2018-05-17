@@ -17,15 +17,19 @@ public class User {
 
 	private String name;
 	private String password;
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
 	private String type;
 
 	public User(){
 
 	}
 
-	public User(String username, String password, String type){
+	public User(String username, String password){
 		this.name = username;
 		this.password = password;
-		this.type = type;
 	}
 }//end User
