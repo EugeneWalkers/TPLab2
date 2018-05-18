@@ -19,4 +19,8 @@ public class RequestList {
     public void add(GetRequest gr){
         mGetRequest.add(gr);
     }
+
+    public void clear() {
+        mGetRequest.clear();
+    }
 }//end RequestList

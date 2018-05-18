@@ -15,9 +15,9 @@ import java.util.ArrayList;
 public class EditRequest extends JFrame {
 
     public EditRequestController mEditRequestController;
-    private DataAccessor dataAccessor;
-    private JPanel panel = new JPanel();
-    private JScrollPane scrollPane = new JScrollPane(panel);
+    private final DataAccessor dataAccessor;
+    private final JPanel panel;
+    private final JScrollPane scrollPane;
 
     EditRequest(User user) {
         super(user.getName());
@@ -25,6 +25,8 @@ public class EditRequest extends JFrame {
         setSize(300, 300);
         setLocationRelativeTo(null);
         dataAccessor = new DataAccessor();
+        panel = new JPanel();
+        scrollPane = getScrollPane();
         setButtons();
     }
 
@@ -32,7 +34,7 @@ public class EditRequest extends JFrame {
         JButton newRequest = new JButton("Create new Request");
         JButton editRequest = new JButton("Edit Request");
         JButton exit = new JButton("Exit");
-        scrollPane = getScrollPane();
+
         setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
         c.gridx = 0;
@@ -52,10 +54,7 @@ public class EditRequest extends JFrame {
         });
 
         editRequest.addActionListener(e -> {
-            panel = new JPanel();
-            JScrollPane pane = new JScrollPane(panel);
-            pane.setMinimumSize(new Dimension(100, 100));
-            panel.setLayout(new GridLayout(0, 1, 5, 5));
+            panel.removeAll();
             RequestList requests = dataAccessor.getRequestsForReview();
             ArrayList<GetRequest> rs = requests.getmGetRequest();
             for (GetRequest r : rs) {

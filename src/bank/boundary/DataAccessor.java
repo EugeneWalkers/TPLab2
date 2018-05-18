@@ -27,6 +27,7 @@ public class DataAccessor {
     }
 
     RequestList getRequestsForReview() {
+        list.clear();
         StringBuilder builder = new StringBuilder("");
         BufferedReader reader = null;
         try {
