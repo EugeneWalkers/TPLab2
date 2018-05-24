@@ -4,10 +4,7 @@ import bank.entities.GetRequest;
 import bank.entities.RequestList;
 import bank.entities.User;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class DataAccessor {
@@ -26,9 +23,46 @@ public class DataAccessor {
         return null;
     }
 
+    void setRequest(String user, int value){
+        ArrayList<GetRequest> requests = list.getmGetRequest();
+        for (GetRequest request : requests) {
+            if (request.getClientName().equals(user)) {
+                request.setValue(value);
+                break;
+            }
+        }
+        rewriteUsers();
+    }
+
+    private void rewriteUsers(){
+        FileWriter writer = null;
+        try {
+            writer = new FileWriter("waitingClients.txt", false);
+
+            ArrayList<GetRequest> requests = list.getmGetRequest();
+            for (int i=0; i<requests.size(); i++){
+                writer.append(String.valueOf(requests.get(i).getId()))
+                        .append(":")
+                        .append(requests.get(i).getClientName()).append(":")
+                        .append(String.valueOf(requests.get(i).getValue()))
+                        .append("\n");
+            }
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        } finally {
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        }
+    }
+
     RequestList getRequestsForReview() {
         list.clear();
-        StringBuilder builder = new StringBuilder("");
+        StringBuilder builder = new StringBuilder();
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(new FileReader("waitingClients.txt"));
@@ -93,6 +127,7 @@ public class DataAccessor {
     boolean writeToQueue(User user, int value) {
         FileWriter writer = null;
         try {
+            id = getLastId() + 1;
             writer = new FileWriter("waitingClients.txt", true);
             writer.append(String.valueOf(id))
                     .append(":")
@@ -112,6 +147,31 @@ public class DataAccessor {
             }
         }
         return false;
+    }
+
+    private int getLastId(){
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader("waitingClients.txt"));
+            StringBuilder builder = new StringBuilder();
+            while(!builder.append(reader.readLine()).toString().equals("null")){
+                id = Integer.parseInt(builder.toString().split(":")[0]);
+                builder.delete(0, builder.length());
+            }
+            return id;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally{
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return -1;
     }
 
     boolean isUserInQueue(User user) {

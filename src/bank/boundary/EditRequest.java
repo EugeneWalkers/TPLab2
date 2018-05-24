@@ -87,6 +87,14 @@ public class EditRequest extends JFrame {
                             add(ok);
                             ok.addActionListener(e1 -> {
                                 //TODO: change db
+                                dataAccessor.setRequest(
+                                        request.getClientName(),
+                                        Integer.parseInt(valueChanged.getText()));
+                                button.setText(request.getId()
+                                        + ":"
+                                        + request.getClientName()
+                                        + ":"
+                                        + valueChanged.getText());
                                 this.dispose();
                             });
                         }
