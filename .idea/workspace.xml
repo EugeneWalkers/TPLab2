@@ -3,13 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="68b46a6e-be1d-44b3-8ee0-c2258fcaad88" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/ClientFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/ClientFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/DataAccessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/DataAccessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/EditRequest$1$Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/EditRequest$1$Editor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/EditRequest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/EditRequest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/EditRequest$1$Editor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/EditRequest$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/EditRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/EditRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/entities/RequestList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/entities/RequestList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/EditRequestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/EditRequestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/boundary/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/boundary/ClientFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bank/boundary/DataAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/boundary/DataAccessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bank/boundary/EditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/boundary/EditRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/controllers/EditRequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/controllers/EditRequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/waitingClients.txt" beforeDir="false" afterPath="$PROJECT_DIR$/waitingClients.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +30,8 @@
       <file leaf-file-name="EditRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bank/boundary/EditRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="89" column="56" lean-forward="true" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
+            <state relative-caret-position="220">
+              <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,20 +39,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clientsInfo.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clientsInfo.txt">
+      <file leaf-file-name="EditRequestController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bank/controllers/EditRequestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
+            <state relative-caret-position="272">
+              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logins.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logins.txt">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bank/controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="239">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,22 +68,24 @@
       <file leaf-file-name="DataAccessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bank/boundary/DataAccessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="171" column="13" lean-forward="true" selection-start-line="171" selection-start-column="13" selection-end-line="171" selection-end-column="13" />
+            <state relative-caret-position="946">
+              <caret line="199" column="46" selection-start-line="199" selection-start-column="46" selection-end-line="199" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#setRequest#0;class#DataAccessor#0" />
+                <element signature="method#rewriteUsers#0;class#DataAccessor#0" />
+                <element signature="method#getRequestsForReview#0;class#DataAccessor#0" />
                 <element signature="method#userExists#0;class#DataAccessor#0" />
-                <element signature="method#isUserInQueue#0;class#DataAccessor#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bank/entities/RequestList.java">
+      <file leaf-file-name="ClientFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bank/boundary/ClientFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="208">
+              <caret line="26" column="60" lean-forward="true" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,34 +93,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bank/entities/GetRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-              <folding>
-                <element signature="e#82#83#0" expanded="true" />
-                <element signature="e#106#107#0" expanded="true" />
-                <element signature="e#129#130#0" expanded="true" />
-                <element signature="e#145#146#0" expanded="true" />
-                <element signature="e#175#176#0" expanded="true" />
-                <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#239#240#0" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-                <element signature="e#300#301#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="waitingClients.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="waitingClients.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/waitingClients.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="20">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CallRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bank/boundary/CallRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,16 +156,19 @@
         <option value="$PROJECT_DIR$/src/bank/ClientFrame.java" />
         <option value="$PROJECT_DIR$/src/boundary/ClientFrame.java" />
         <option value="$PROJECT_DIR$/src/bank/entities/User.java" />
-        <option value="$PROJECT_DIR$/src/bank/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/logins.txt" />
-        <option value="$PROJECT_DIR$/src/bank/boundary/ClientFrame.java" />
         <option value="$PROJECT_DIR$/src/bank/boundary/LoginForm.java" />
         <option value="$PROJECT_DIR$/src/bank/entities/GetRequest.java" />
         <option value="$PROJECT_DIR$/clientsInfo.txt" />
         <option value="$PROJECT_DIR$/src/bank/entities/RequestList.java" />
-        <option value="$PROJECT_DIR$/src/bank/boundary/EditRequest.java" />
+        <option value="$PROJECT_DIR$/src/bank/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/bank/controllers/AcceptCopyOfTheRequestController.java" />
+        <option value="$PROJECT_DIR$/src/bank/boundary/ClientFrame.java" />
         <option value="$PROJECT_DIR$/src/bank/boundary/DataAccessor.java" />
         <option value="$PROJECT_DIR$/waitingClients.txt" />
+        <option value="$PROJECT_DIR$/src/bank/boundary/ButtonEditListener.java" />
+        <option value="$PROJECT_DIR$/src/bank/controllers/EditRequestController.java" />
+        <option value="$PROJECT_DIR$/src/bank/boundary/EditRequest.java" />
       </list>
     </option>
   </component>
@@ -171,7 +178,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -246,6 +253,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -262,7 +270,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,7 +314,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -426,12 +433,13 @@
       <workItem from="1525819331645" duration="1512000" />
       <workItem from="1526308094903" duration="7373000" />
       <workItem from="1526324091525" duration="6305000" />
-      <workItem from="1527073427244" duration="5433000" />
+      <workItem from="1527073427244" duration="6127000" />
+      <workItem from="1527267752853" duration="2578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33803000" />
+    <option name="totallyTimeSpent" value="37075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -439,7 +447,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32968536" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -475,22 +483,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/bank/boundary/DataAccessor.java</url>
+          <line>133</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/bank/boundary/LoginForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1159#1160#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bank/entities/RequestList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -521,6 +525,8 @@
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -538,8 +544,10 @@
           <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setRequest#0;class#DataAccessor#0" />
+            <element signature="method#rewriteUsers#0;class#DataAccessor#0" />
+            <element signature="method#getRequestsForReview#0;class#DataAccessor#0" />
             <element signature="method#userExists#0;class#DataAccessor#0" />
-            <element signature="method#isUserInQueue#0;class#DataAccessor#0" />
           </folding>
         </state>
       </provider>
@@ -605,6 +613,8 @@
           <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,8 +632,10 @@
           <caret column="7" selection-start-column="7" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setRequest#0;class#DataAccessor#0" />
+            <element signature="method#rewriteUsers#0;class#DataAccessor#0" />
+            <element signature="method#getRequestsForReview#0;class#DataAccessor#0" />
             <element signature="method#userExists#0;class#DataAccessor#0" />
-            <element signature="method#isUserInQueue#0;class#DataAccessor#0" />
           </folding>
         </state>
       </provider>
@@ -675,6 +687,8 @@
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -700,33 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/controllers/AcceptCopyOfTheRequestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/controllers/CallRequestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/controllers/EditRequestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainFrame.java" />
     <entry file="file://$PROJECT_DIR$/src/LoginFrame.java" />
     <entry file="file://$PROJECT_DIR$/Lab2.iml">
@@ -747,16 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/boundary/CallRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -799,41 +776,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/boundary/ClientFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/bank/entities/RequestList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/boundary/LoginForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="96" column="26" lean-forward="true" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1159#1160#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bank/entities/GetRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
+        <state relative-caret-position="720">
           <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
           <folding>
             <element signature="e#82#83#0" expanded="true" />
@@ -852,33 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientsInfo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/entities/RequestList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/boundary/EditRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="89" column="56" lean-forward="true" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logins.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -886,22 +814,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/boundary/DataAccessor.java">
+    <entry file="file://$PROJECT_DIR$/src/bank/boundary/LoginForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="171" column="13" lean-forward="true" selection-start-line="171" selection-start-column="13" selection-end-line="171" selection-end-column="13" />
+        <state relative-caret-position="826">
+          <caret line="92" column="29" lean-forward="true" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/boundary/ClientFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="26" column="60" lean-forward="true" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientsInfo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/boundary/CallRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/controllers/CallRequestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/controllers/AcceptCopyOfTheRequestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/boundary/DataAccessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="199" column="46" selection-start-line="199" selection-start-column="46" selection-end-line="199" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setRequest#0;class#DataAccessor#0" />
+            <element signature="method#rewriteUsers#0;class#DataAccessor#0" />
+            <element signature="method#getRequestsForReview#0;class#DataAccessor#0" />
             <element signature="method#userExists#0;class#DataAccessor#0" />
-            <element signature="method#isUserInQueue#0;class#DataAccessor#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/waitingClients.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="20">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/boundary/EditRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/boundary/ButtonEditListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/controllers/EditRequestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

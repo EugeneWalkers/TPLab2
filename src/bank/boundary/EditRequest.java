@@ -2,32 +2,26 @@ package bank.boundary;
 
 import bank.Main;
 import bank.controllers.EditRequestController;
-import bank.entities.GetRequest;
-import bank.entities.RequestList;
 import bank.entities.User;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 public class EditRequest extends JFrame {
 
-    public EditRequestController mEditRequestController;
-    private final DataAccessor dataAccessor;
-    private final JPanel panel;
-    private final JScrollPane scrollPane;
+    private EditRequestController mEditRequestController;
+    private JPanel panel;
+    private JScrollPane scrollPane;
 
     EditRequest(User user) {
         super(user.getName());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300, 300);
         setLocationRelativeTo(null);
-        dataAccessor = new DataAccessor();
         panel = new JPanel();
         scrollPane = getScrollPane();
         setButtons();
+        mEditRequestController = new EditRequestController();
     }
 
     private void setButtons() {
@@ -54,59 +48,7 @@ public class EditRequest extends JFrame {
         });
 
         editRequest.addActionListener(e -> {
-            panel.removeAll();
-            RequestList requests = dataAccessor.getRequestsForReview();
-            ArrayList<GetRequest> rs = requests.getmGetRequest();
-            for (GetRequest r : rs) {
-                JButton button = new JButton(r.toString());
-                button.addActionListener(new ActionListener() {
-                    class Editor extends JFrame {
-                        Editor() {
-                            super(button.getText().split(":")[1]);
-                            int id = Integer.parseInt(button.getText().split(":")[0]);
-                            setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-                            setSize(250, 150);
-                            setLocationRelativeTo(null);
-                            setLayout(new GridLayout(0, 2, 10, 10));
-                            GetRequest request = dataAccessor.getRequest(id);
-                            JLabel idConst = new JLabel("Id:");
-                            JLabel clientConst = new JLabel("Client:");
-                            JLabel idChanged = new JLabel(String.valueOf(id));
-                            JLabel clientChanged = new JLabel(request.getClientName());
-                            JLabel valueConst = new JLabel("Value:");
-                            JTextField valueChanged = new JTextField();
-                            valueChanged.setText(String.valueOf(request.getValue()));
-                            add(idConst);
-                            add(idChanged);
-                            add(clientConst);
-                            add(clientChanged);
-                            add(valueConst);
-                            add(valueChanged);
-                            add(new JLabel());
-                            JButton ok = new JButton("Save");
-                            add(ok);
-                            ok.addActionListener(e1 -> {
-                                //TODO: change db
-                                dataAccessor.setRequest(
-                                        request.getClientName(),
-                                        Integer.parseInt(valueChanged.getText()));
-                                button.setText(request.getId()
-                                        + ":"
-                                        + request.getClientName()
-                                        + ":"
-                                        + valueChanged.getText());
-                                this.dispose();
-                            });
-                        }
-                    }
-
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        new Editor().setVisible(true);
-                    }
-                });
-                panel.add(button);
-            }
+            panel = mEditRequestController.getPanelScrollPane(panel);
             revalidate();
         });
 

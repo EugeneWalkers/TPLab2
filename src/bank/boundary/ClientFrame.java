@@ -15,7 +15,6 @@ public class ClientFrame extends JFrame {
     private JButton sendRequestForCredit = new JButton("Get Credit");
     private JButton exit = new JButton("Exit");
     private JTextField value = new JTextField();
-    private DataAccessor dataAccessor;
     private User user;
 
     ClientFrame(User user) {
@@ -25,11 +24,10 @@ public class ClientFrame extends JFrame {
         setLocationRelativeTo(null);
         this.user = user;
         setButtons();
-        dataAccessor = new DataAccessor();
-        sendRequestForCredit.setEnabled(!dataAccessor.isUserInQueue(user));
+        sendRequestForCredit.setEnabled(!DataAccessor.isUserInQueue(user));
         sendRequestForCredit.addActionListener(e -> {
             if (!value.getText().equals("")
-                    && dataAccessor.writeToQueue(user, Integer.parseInt(value.getText()))){
+                    && DataAccessor.writeToQueue(user, Integer.parseInt(value.getText()))){
                 sendRequestForCredit.setEnabled(false);
             }
         });

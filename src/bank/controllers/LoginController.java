@@ -7,18 +7,16 @@ import bank.entities.User;
 public class LoginController {
 
     private LoginForm mLoginForm;
-    private DataAccessor mDataAccessor;
 
     public LoginController(LoginForm mLoginForm) {
         this.mLoginForm = mLoginForm;
-        mDataAccessor = new DataAccessor();
     }
 
     public User doLogin() {
         String login = mLoginForm.getLogin().getText();
         String password = mLoginForm.getPassword().getText();
         User user = new User(login, password);
-        if (mDataAccessor.userExists(user)){
+        if (DataAccessor.userExists(user)){
             return user;
         }
         else{
