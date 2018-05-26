@@ -1,5 +1,6 @@
-package bank.boundary;
+package bank.entities;
 
+import bank.boundary.DataAccessor;
 import bank.entities.GetRequest;
 
 import javax.swing.*;
@@ -12,7 +13,7 @@ public class ButtonEditListener implements ActionListener {
     private GetRequest r;
     private JButton button;
 
-    class Editor extends JFrame {
+    private class Editor extends JFrame {
         Editor() {
             super(button.getText().split(":")[1]);
             int id = Integer.parseInt(button.getText().split(":")[0]);

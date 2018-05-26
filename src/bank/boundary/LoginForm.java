@@ -10,9 +10,9 @@ import java.awt.event.ActionListener;
 
 public class LoginForm extends JFrame {
 
-    public static CallRequest caller;
-    public static EditRequest editor;
-    public static AcceptCopyOfTheRequest accepter;
+    public static ReferentFrame caller;
+    public static ClerkFrame editor;
+    public static EmployeeFrame accepter;
     public static ClientFrame client;
     public static InspectorFrame inspector;
 
@@ -70,19 +70,19 @@ public class LoginForm extends JFrame {
                     break;
 
                 case "clerk":
-                    editor = new EditRequest(user);
+                    editor = new ClerkFrame(user);
                     editor.setVisible(true);
                     this.setVisible(false);
                     break;
 
                 case "referent":
-                    caller = new CallRequest(user);
+                    caller = new ReferentFrame(user);
                     caller.setVisible(true);
                     this.setVisible(false);
                     break;
 
                 case "employee":
-                    accepter = new AcceptCopyOfTheRequest(user);
+                    accepter = new EmployeeFrame(user);
                     accepter.setVisible(true);
                     this.setVisible(false);
                     break;

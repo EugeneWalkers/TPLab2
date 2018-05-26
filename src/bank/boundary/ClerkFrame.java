@@ -1,31 +1,36 @@
 package bank.boundary;
 
 import bank.Main;
-import bank.controllers.EditRequestController;
+import bank.controllers.ClerkFrameController;
 import bank.entities.User;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class EditRequest extends JFrame {
+public class ClerkFrame extends JFrame {
 
-    private EditRequestController mEditRequestController;
-    private JPanel panel;
-    private JScrollPane scrollPane;
+    private ClerkFrameController mClerkFrameController;
+    private JPanel panelEdit, panelCreate;
 
-    EditRequest(User user) {
+
+    ClerkFrame(User user) {
         super(user.getName());
+        setWindow();
+        mClerkFrameController = new ClerkFrameController();
+    }
+
+    private void setWindow() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300, 300);
         setLocationRelativeTo(null);
-        panel = new JPanel();
-        scrollPane = getScrollPane();
-        setButtons();
-        mEditRequestController = new EditRequestController();
-    }
+        panelEdit = new JPanel();
+        panelEdit.setLayout(new GridLayout(0, 1, 7, 7));
+        panelCreate = new JPanel();
+        panelCreate.setLayout(new GridLayout(0, 1, 7, 7));
+        JScrollPane scrollPaneForEdit = getScrollPane(panelEdit);
+        JScrollPane scrollPaneForCreate = getScrollPane(panelCreate);
 
-    private void setButtons() {
-        JButton newRequest = new JButton("Create new Request");
+        JButton newRequest = new JButton("Create Credit Request");
         JButton editRequest = new JButton("Edit Request");
         JButton exit = new JButton("Exit");
 
@@ -36,19 +41,23 @@ public class EditRequest extends JFrame {
         c.insets = new Insets(5, 5, 5, 5);
         add(newRequest, c);
         c.gridy = 1;
-        add(editRequest, c);
+        add(scrollPaneForCreate, c);
         c.gridy = 2;
-        c.fill = GridBagConstraints.BOTH;
-        add(scrollPane, c);
+        add(editRequest, c);
         c.gridy = 3;
+        c.fill = GridBagConstraints.BOTH;
+        add(scrollPaneForEdit, c);
+        c.gridy = 4;
         add(exit, c);
 
         newRequest.addActionListener(e -> {
+            panelCreate = mClerkFrameController.getPanelScrollPaneForCreate(panelCreate);
 
+            revalidate();
         });
 
         editRequest.addActionListener(e -> {
-            panel = mEditRequestController.getPanelScrollPane(panel);
+            panelEdit = mClerkFrameController.getPanelScrollPaneForEdit(panelEdit);
             revalidate();
         });
 
@@ -61,7 +70,7 @@ public class EditRequest extends JFrame {
 
     }
 
-    private JScrollPane getScrollPane() {
+    private JScrollPane getScrollPane(JPanel panel) {
         JScrollPane pane = new JScrollPane(panel);
         pane.setMinimumSize(new Dimension(100, 100));
         panel.setLayout(new GridLayout(0, 1, 5, 5));
@@ -83,4 +92,4 @@ public class EditRequest extends JFrame {
     public void showRequest() {
 
     }
-}//end EditRequest
+}//end ClerkFrame

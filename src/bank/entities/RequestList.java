@@ -16,11 +16,33 @@ public class RequestList {
         mGetRequest.addAll(Arrays.asList(requests));
     }
 
-    public void add(GetRequest gr){
+    public void add(GetRequest gr) {
         mGetRequest.add(gr);
+    }
+
+    public void removeById(int id) {
+        for (int i = 0; i < mGetRequest.size(); i++) {
+            if (mGetRequest.get(i).getId() == id) {
+                mGetRequest.remove(i);
+                break;
+            }
+        }
     }
 
     public void clear() {
         mGetRequest.clear();
+    }
+
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        for (GetRequest request : mGetRequest) {
+            builder.append(request.toString());
+            builder.append("\n");
+        }
+        return builder.toString();
+    }
+
+    public void remove(GetRequest request){
+        mGetRequest.remove(request);
     }
 }//end RequestList

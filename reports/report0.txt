@@ -1,3 +1,0 @@
-User: client1
-Income: 2000
-Consumption: 1100

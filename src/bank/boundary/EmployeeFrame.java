@@ -1,21 +1,17 @@
 package bank.boundary;
 
-import bank.controllers.AcceptCopyOfTheRequestController;
+import bank.controllers.EmployeeFrameController;
 import bank.entities.User;
 
 import javax.swing.*;
 
-public class AcceptCopyOfTheRequest extends JFrame {
+public class EmployeeFrame extends JFrame {
 
-	public AcceptCopyOfTheRequestController mAcceptCopyOfTheRequestController;
+	public EmployeeFrameController mEmployeeFrameController;
 
-	public AcceptCopyOfTheRequest(User user){
+	public EmployeeFrame(User user){
 		super(user.getName());
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	}
-
-	public void EstimateRequest(){
-
 	}
 
 	public void setDocumentsOfCurrentRequest(){
@@ -41,4 +37,4 @@ public class AcceptCopyOfTheRequest extends JFrame {
 	public void getDocumentsOfCurrentRequest(){
 
 	}
-}//end AcceptCopyOfTheRequest
+}//end EmployeeFrame
