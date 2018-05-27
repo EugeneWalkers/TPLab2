@@ -17,7 +17,7 @@ public class EmployeeFrameController {
         for (final RequestWithReport request : DataAccessor.getRequestsForReferent()) {
             if (request.isRedirectedToBankEmployee()) {
                 final JButton button = new JButton(request.getRequest().toString());
-                button.addActionListener(new EmployeeAcceptListener(request));
+                button.addActionListener(new EmployeeAcceptListener(request, button));
                 panel.add(button);
             }
         }

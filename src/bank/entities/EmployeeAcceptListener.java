@@ -10,17 +10,18 @@ import java.awt.event.ActionListener;
 public class EmployeeAcceptListener implements ActionListener {
 
     private final RequestWithReport requestWithReport;
+    private JButton thisButton;
 
     private class Reporter extends JFrame {
         Reporter() {
             super("Report for " + requestWithReport.getRequest().getClientName());
             final GetRequest request = requestWithReport.getRequest();
-            final Report report = DataAccessor.getReport(request.getClientName());
+            final String report = DataAccessor.getReport(request.getClientName());
             final String reportLabelText;
             if (report == null) {
                 reportLabelText = "Report doesn't exist :( ";
             } else {
-                reportLabelText = report.toString();
+                reportLabelText = report;
             }
 
             setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -39,6 +40,7 @@ public class EmployeeAcceptListener implements ActionListener {
             add(ok);
             ok.addActionListener(e1 -> {
                 DataAccessor.acceptCopyOfTheReport(request);
+                thisButton.setEnabled(false);
                 this.dispose();
             });
         }
@@ -49,7 +51,8 @@ public class EmployeeAcceptListener implements ActionListener {
         new Reporter().setVisible(true);
     }
 
-    public EmployeeAcceptListener(RequestWithReport requestWithReport) {
+    public EmployeeAcceptListener(RequestWithReport requestWithReport, JButton thisButton) {
         this.requestWithReport = requestWithReport;
+        this.thisButton = thisButton;
     }
 }

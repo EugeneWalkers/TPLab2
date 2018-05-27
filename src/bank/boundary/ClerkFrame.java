@@ -52,7 +52,6 @@ public class ClerkFrame extends JFrame {
 
         newRequest.addActionListener(e -> {
             panelCreate = mClerkFrameController.getPanelScrollPaneForCreate(panelCreate);
-
             revalidate();
         });
 

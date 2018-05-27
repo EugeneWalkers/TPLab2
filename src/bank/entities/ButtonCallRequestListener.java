@@ -16,11 +16,11 @@ public class ButtonCallRequestListener implements ActionListener {
             super("Report for " + requestWithReport.getRequest().getClientName());
             final GetRequest request = requestWithReport.getRequest();
             final String reportLabelText;
-            if (!requestWithReport.isRedirectedToBankEmployee()&&!requestWithReport.isAcceptedFromBankEmployee()) {
+            if (!requestWithReport.isRedirectedToBankEmployee() && !requestWithReport.isAcceptedFromBankEmployee()) {
                 reportLabelText = "Report hasn't been attached yet :( ";
             } else {
-                final Report r = DataAccessor.getReport(request.getClientName());
-                if (r!=null) {
+                final String r = DataAccessor.getReport(request.getClientName());
+                if (r != null) {
                     reportLabelText = r.toString();
                 } else {
                     reportLabelText = "Report doesn't exist";
@@ -38,28 +38,30 @@ public class ButtonCallRequestListener implements ActionListener {
             add(new JLabel("Accepted from Employee:"));
             add(new JLabel(String.valueOf(requestWithReport.isAcceptedFromBankEmployee())));
             JButton getReport = new JButton("Get report");
+
+            getReport.addActionListener(e -> {
+                requestWithReport.setReport(
+                        DataAccessor.getReport(request.getClientName())
+                );
+                getReport.setEnabled(false);
+                if (requestWithReport.getReport() != null) {
+                    reportLabel.setText(requestWithReport.getReport());
+                    DataAccessor.sendCopyOfTheReportToBankEmployee(request);
+                    requestWithReport.setRedirectedToBankEmployee(true);
+                }
+            });
+
             add(getReport);
-            if (requestWithReport.isRedirectedToBankEmployee()||requestWithReport.isAcceptedFromBankEmployee()) {
+            if (requestWithReport.isRedirectedToBankEmployee() || requestWithReport.isAcceptedFromBankEmployee()) {
                 getReport.setEnabled(false);
             }
             JButton ok = new JButton("Ok");
             add(ok);
             ok.addActionListener(e1 -> {
-
                 this.dispose();
             });
 
-            getReport.addActionListener(e-> {
-                requestWithReport.setReport(
-                        DataAccessor.getReport(request.getClientName())
-                );
-                if (requestWithReport.getReport()!=null) {
-                    reportLabel.setText(requestWithReport.getReport().toString());
-                    DataAccessor.sendCopyOfTheReportToBankEmployee(request);
-                    getReport.setEnabled(false);
-                    requestWithReport.setRedirectedToBankEmployee(true);
-                }
-            });
+
         }
     }
 

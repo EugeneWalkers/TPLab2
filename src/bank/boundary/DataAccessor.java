@@ -2,10 +2,7 @@ package bank.boundary;
 
 import bank.entities.*;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -17,7 +14,8 @@ public class DataAccessor {
     private static final String clientsReport = "reports/report";
     private static final String fromClerkToReferent = "FromClerkToReferent.txt";
     private static final String metadata = "metadata.txt";
-    private static final String creditDepartmentReports = "Reports";
+    private static final String creditDepartmentReportsMetadata = "Credit Reports/metadata.txt";
+    private static final String creditDepartmentReports = "Credit Reports/";
 
     private static RequestList clientListInQueue = new RequestList();
 
@@ -103,26 +101,58 @@ public class DataAccessor {
 
     }
 
-    public static Report getReport(final String client) {
+    public static String getReport(final String client) {
         final Map<String, String> map = new HashMap<>();
         final StringBuilder builder = new StringBuilder();
+        StringBuilder path = new StringBuilder();
+        BufferedReader reader = null;
         try {
-            final BufferedReader reader = new BufferedReader(new FileReader(creditDepartmentReports));
+            reader = new BufferedReader(new FileReader(creditDepartmentReportsMetadata));
             while (!builder.append(reader.readLine()).toString().equals("null")) {
-                final String[] temp = builder.toString().split(":");
-                map.put(temp[0], temp[1]);
+                final String[] someClient = builder.toString().split(":");
+                if (someClient[0].equals(client)){
+                    path.append(someClient[1]);
+                    builder.delete(0, builder.length());
+                    break;
+                }
                 builder.delete(0, builder.length());
             }
-            reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        final String text = map.get(client);
-        if (text!= null) {
-            return new Report(text);
-        } else {
-            return null;
+        finally {
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+        reader = null;
+        StringBuilder report = new StringBuilder("");
+        StringBuilder temp = new StringBuilder();
+        try {
+            reader = new BufferedReader(new FileReader(creditDepartmentReports + path.toString() + ".txt"));
+            while (!temp.append(reader.readLine()).toString().equals("null")){
+                report.append(temp.toString());
+                report.append("\n");
+                temp.delete(0, temp.length());
+            }
+            return report.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally{
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
     }
 
     public static List<RequestWithReport> getRequestsForReferent() {

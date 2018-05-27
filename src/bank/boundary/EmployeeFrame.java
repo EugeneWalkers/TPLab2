@@ -23,13 +23,16 @@ public class EmployeeFrame extends JFrame {
         setSize(300, 300);
         setLocationRelativeTo(null);
         setLayout(new GridBagLayout());
-        JButton callRequest = new JButton("Accept Copy of the Report");
+        JButton getInformationAboutFinances = new JButton("Get Finances Info");
+        JButton callRequest = new JButton("Call Request");
+        JButton acceptCopyOfTheRequest = new JButton("Accept Copy of the Request");
+        JButton issueReport = new JButton("Issue Report");
         JButton exit = new JButton("Exit");
         panel = new JPanel();
         panel.setLayout(new GridLayout(0, 1, 7, 7));
         JScrollPane requests = getScrollPane();
 
-        callRequest.addActionListener(e -> {
+        acceptCopyOfTheRequest.addActionListener(e -> {
             panel = mEmployeeFrameController.getPanelScrollPane(panel);
             revalidate();
         });
@@ -43,10 +46,16 @@ public class EmployeeFrame extends JFrame {
         c.gridx = 0;
         c.gridy = 0;
         c.insets = new Insets(5, 5, 5, 5);
-        add(callRequest, c);
+        add(getInformationAboutFinances, c);
         c.gridy = 1;
+        add(callRequest, c);
+        c.gridy = 2;
+        add(acceptCopyOfTheRequest, c);
+        c.gridy = 3;
         add(requests, c);
         c.gridy = 4;
+        add(issueReport, c);
+        c.gridy = 5;
         add(exit, c);
     }
 
