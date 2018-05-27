@@ -10,7 +10,7 @@ import java.awt.*;
 public class ReferentFrame extends JFrame {
 
     private ReferentFrameController mReferentFrameController;
-    private JPanel panel = new JPanel();
+    private JPanel panel;
 
     ReferentFrame(User user) {
         super(user.getName());
@@ -24,8 +24,6 @@ public class ReferentFrame extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new GridBagLayout());
         JButton callRequest = new JButton("Call Request");
-        JButton analyseAndAccept = new JButton("Analyse And Accept");
-        JButton checkFinances = new JButton("Check finances");
         JButton exit = new JButton("Exit");
         panel = new JPanel();
         panel.setLayout(new GridLayout(0, 1, 7, 7));
@@ -34,14 +32,6 @@ public class ReferentFrame extends JFrame {
         callRequest.addActionListener(e -> {
             panel = mReferentFrameController.getPanelScrollPane(panel);
             revalidate();
-        });
-
-        analyseAndAccept.addActionListener(e -> {
-
-        });
-
-        checkFinances.addActionListener(e -> {
-
         });
 
         exit.addActionListener(e -> {
@@ -56,11 +46,6 @@ public class ReferentFrame extends JFrame {
         add(callRequest, c);
         c.gridy = 1;
         add(requests, c);
-        c.gridy = 2;
-        c.fill = GridBagConstraints.BOTH;
-        add(analyseAndAccept, c);
-        c.gridy = 3;
-        add(checkFinances, c);
         c.gridy = 4;
         add(exit, c);
     }

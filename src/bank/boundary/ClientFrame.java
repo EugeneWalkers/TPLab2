@@ -30,7 +30,7 @@ public class ClientFrame extends JFrame {
         sendRequestForCredit.addActionListener(e -> {
             if (!value.getText().equals("")
                     && DataAccessor.writeToQueue(user, Integer.parseInt(value.getText()))
-                    && DataAccessor.writeReport(DataAccessor.getIdByUsername(user.getName()), reportWriter.getText())
+                    //&& DataAccessor.writeReport(DataAccessor.getIdByUsername(user.getName()), reportWriter.getText())
                     && DataAccessor.incrementId()) {
                 sendRequestForCredit.setEnabled(false);
             }
