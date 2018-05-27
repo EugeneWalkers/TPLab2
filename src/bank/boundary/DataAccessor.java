@@ -137,7 +137,8 @@ public class DataAccessor {
                         new GetRequest(Integer.parseInt(temp[0]),
                         temp[1],
                         Integer.parseInt(temp[2])),
-                        Boolean.parseBoolean(temp[3])
+                        Boolean.parseBoolean(temp[3]),
+                        Boolean.parseBoolean(temp[4])
                 ));
                 builder.delete(0, builder.length());
             }
@@ -148,10 +149,37 @@ public class DataAccessor {
         return result;
     }
 
+    public static void sendCopyOfTheReportToBankEmployee(final GetRequest request) {
+        List<RequestWithReport> requests = getRequestsForReferent();
+        for (final RequestWithReport requestWithReport : requests) {
+            if (requestWithReport.getRequest().equals(request)) {
+                requestWithReport.setRedirectedToBankEmployee(true);
+                break;
+            }
+        }
+        try {
+            final FileWriter writer = new FileWriter(fromClerkToReferent, false);
+            writer.write("");
+            for (final RequestWithReport requestWithReport : requests) {
+                final GetRequest r = requestWithReport.getRequest();
+                writer.append(String.valueOf(r.getId()))
+                        .append(":").append(r.getClientName())
+                        .append(":").append(String.valueOf(r.getValue()))
+                        .append(":").append(String.valueOf(requestWithReport.isRedirectedToBankEmployee()))
+                        .append(":").append(String.valueOf(requestWithReport.isAcceptedFromBankEmployee()))
+                        .append("\n");
+            }
+            writer.close();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+    }
+
     public static void acceptCopyOfTheReport(final GetRequest request) {
         List<RequestWithReport> requests = getRequestsForReferent();
         for (final RequestWithReport requestWithReport : requests) {
             if (requestWithReport.getRequest().equals(request)) {
+                requestWithReport.setRedirectedToBankEmployee(false);
                 requestWithReport.setAcceptedFromBankEmployee(true);
                 break;
             }
@@ -164,6 +192,7 @@ public class DataAccessor {
                 writer.append(String.valueOf(r.getId()))
                         .append(":").append(r.getClientName())
                         .append(":").append(String.valueOf(r.getValue()))
+                        .append(":").append(String.valueOf(requestWithReport.isRedirectedToBankEmployee()))
                         .append(":").append(String.valueOf(requestWithReport.isAcceptedFromBankEmployee()))
                         .append("\n");
             }
@@ -180,6 +209,7 @@ public class DataAccessor {
             writer.append(String.valueOf(request.getId()))
                     .append(":").append(request.getClientName())
                     .append(":").append(String.valueOf(request.getValue()))
+                    .append(":").append("false")
                     .append(":").append("false")
                     .append("\n");
             return true;

@@ -15,7 +15,7 @@ public class EmployeeFrameController {
     public JPanel getPanelScrollPane(JPanel panel){
         panel.removeAll();
         for (final RequestWithReport request : DataAccessor.getRequestsForReferent()) {
-            if (!request.isAcceptedFromBankEmployee()) {
+            if (request.isRedirectedToBankEmployee()) {
                 final JButton button = new JButton(request.getRequest().toString());
                 button.addActionListener(new EmployeeAcceptListener(request));
                 panel.add(button);

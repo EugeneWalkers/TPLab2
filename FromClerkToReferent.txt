@@ -1,3 +1,4 @@
-0:client0:100:true
-0:client1:2000:true
-0:client2:2345:false
+0:client0:100:false:false
+0:client1:2000:false:false
+0:client2:2345:false:false
+

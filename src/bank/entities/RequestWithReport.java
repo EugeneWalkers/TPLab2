@@ -3,10 +3,14 @@ package bank.entities;
 public class RequestWithReport {
     private final GetRequest request;
     private Report report;
+    private boolean isRedirectedToBankEmployee;
     private boolean isAcceptedFromBankEmployee;
 
-    public RequestWithReport(GetRequest request, boolean isAcceptedFromBankEmployee) {
+    public RequestWithReport(GetRequest request,
+                             boolean isRedirectedToBankEmployee,
+                             boolean isAcceptedFromBankEmployee) {
         this.request = request;
+        this.isRedirectedToBankEmployee = isRedirectedToBankEmployee;
         this.isAcceptedFromBankEmployee = isAcceptedFromBankEmployee;
     }
 
@@ -28,5 +32,13 @@ public class RequestWithReport {
 
     public GetRequest getRequest() {
         return request;
+    }
+
+    public boolean isRedirectedToBankEmployee() {
+        return isRedirectedToBankEmployee;
+    }
+
+    public void setRedirectedToBankEmployee(boolean redirectedToBankEmployee) {
+        isRedirectedToBankEmployee = redirectedToBankEmployee;
     }
 }

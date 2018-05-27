@@ -23,7 +23,7 @@ public class EmployeeFrame extends JFrame {
         setSize(300, 300);
         setLocationRelativeTo(null);
         setLayout(new GridBagLayout());
-        JButton callRequest = new JButton("Call Request");
+        JButton callRequest = new JButton("Accept Copy of the Report");
         JButton exit = new JButton("Exit");
         panel = new JPanel();
         panel.setLayout(new GridLayout(0, 1, 7, 7));

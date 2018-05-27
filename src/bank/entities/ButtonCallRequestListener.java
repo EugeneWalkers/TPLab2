@@ -15,56 +15,49 @@ public class ButtonCallRequestListener implements ActionListener {
         Reporter() {
             super("Report for " + requestWithReport.getRequest().getClientName());
             final GetRequest request = requestWithReport.getRequest();
-            final Report report = requestWithReport.getReport();
             final String reportLabelText;
-            if (report == null) {
+            if (!requestWithReport.isRedirectedToBankEmployee()&&!requestWithReport.isAcceptedFromBankEmployee()) {
                 reportLabelText = "Report hasn't been attached yet :( ";
             } else {
-                reportLabelText = report.toString();
+                final Report r = DataAccessor.getReport(request.getClientName());
+                if (r!=null) {
+                    reportLabelText = r.toString();
+                } else {
+                    reportLabelText = "Report doesn't exist";
+                }
             }
 
             setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-            setSize(450, 350);
+            setSize(350, 150);
             setLocationRelativeTo(null);
             setLayout(new GridLayout(0, 2, 10, 10));
 
-            add(new JLabel("Id:"));
-            add(new JLabel(String.valueOf(request.getId())));
-            add(new JLabel("Client:"));
-            add(new JLabel(request.getClientName()));
-            add(new JLabel("Value:"));
-            JTextField valueChanged = new JTextField();
-            valueChanged.setText(String.valueOf(request.getValue()));
-            add(valueChanged);
             JLabel reportLabel = new JLabel(reportLabelText);
             add(new JLabel("Report:"));
             add(reportLabel);
-            add(new JLabel("Accepted:"));
+            add(new JLabel("Accepted from Employee:"));
             add(new JLabel(String.valueOf(requestWithReport.isAcceptedFromBankEmployee())));
-            JButton checkFinances = new JButton("Check finances");
-            add(checkFinances);
-            JButton ok = new JButton("Save");
-            add(ok);
-            if (requestWithReport.isAcceptedFromBankEmployee()&&requestWithReport.getReport()!=null) {
-                ok.setEnabled(true);
-            } else {
-                ok.setEnabled(false);
+            JButton getReport = new JButton("Get report");
+            add(getReport);
+            if (requestWithReport.isRedirectedToBankEmployee()||requestWithReport.isAcceptedFromBankEmployee()) {
+                getReport.setEnabled(false);
             }
-
+            JButton ok = new JButton("Ok");
+            add(ok);
             ok.addActionListener(e1 -> {
 
                 this.dispose();
             });
 
-            checkFinances.addActionListener(e-> {
+            getReport.addActionListener(e-> {
                 requestWithReport.setReport(
                         DataAccessor.getReport(request.getClientName())
                 );
                 if (requestWithReport.getReport()!=null) {
                     reportLabel.setText(requestWithReport.getReport().toString());
-                    if (requestWithReport.isAcceptedFromBankEmployee()) {
-                        ok.setEnabled(true);
-                    }
+                    DataAccessor.sendCopyOfTheReportToBankEmployee(request);
+                    getReport.setEnabled(false);
+                    requestWithReport.setRedirectedToBankEmployee(true);
                 }
             });
         }
