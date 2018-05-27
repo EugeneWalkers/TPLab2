@@ -1,14 +1,10 @@
 package bank.controllers;
 
 import bank.boundary.ReferentFrame;
-import bank.entities.ButtonCallRequestListener;
-import bank.entities.ButtonEditListener;
+import bank.entities.*;
 import bank.boundary.DataAccessor;
-import bank.entities.GetRequest;
-import bank.entities.RequestList;
 
 import javax.swing.*;
-import java.util.ArrayList;
 
 public class ReferentFrameController {
 
@@ -25,11 +21,9 @@ public class ReferentFrameController {
 
 	public JPanel getPanelScrollPane(JPanel panel){
 		panel.removeAll();
-		RequestList requests = DataAccessor.getRequestsForReview();
-		ArrayList<GetRequest> rs = requests.getmGetRequest();
-		for (GetRequest r : rs) {
-			JButton button = new JButton(r.toString());
-			button.addActionListener(new ButtonCallRequestListener(button, r));
+		for (final RequestWithReport request : DataAccessor.getRequestsForReferent()) {
+			final JButton button = new JButton(request.getRequest().toString());
+			button.addActionListener(new ButtonCallRequestListener(request));
 			panel.add(button);
 		}
 		return panel;

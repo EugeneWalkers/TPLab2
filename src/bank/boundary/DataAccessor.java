@@ -1,14 +1,13 @@
 package bank.boundary;
 
-import bank.entities.GetRequest;
-import bank.entities.RequestList;
-import bank.entities.User;
+import bank.entities.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class DataAccessor {
 
@@ -101,6 +100,54 @@ public class DataAccessor {
 
     }
 
+    public static List<RequestWithReport> getRequestsForReferent() {
+        final List<RequestWithReport> result = new ArrayList<>();
+        final StringBuilder builder = new StringBuilder();
+        try {
+            final BufferedReader reader = new BufferedReader(new FileReader(fromClerkToReferent));
+            while (!builder.append(reader.readLine()).toString().equals("null")) {
+                final String[] temp = builder.toString().split(":");
+
+                result.add(new RequestWithReport(
+                        new GetRequest(Integer.parseInt(temp[0]),
+                        temp[1],
+                        Integer.parseInt(temp[2])),
+                        Boolean.parseBoolean(temp[3])
+                ));
+                builder.delete(0, builder.length());
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    public static void acceptCopyOfTheReport(final GetRequest request) {
+        List<RequestWithReport> requests = getRequestsForReferent();
+        for (final RequestWithReport requestWithReport : requests) {
+            if (requestWithReport.getRequest().equals(request)) {
+                requestWithReport.setAcceptedFromBankEmployee(true);
+                break;
+            }
+        }
+        try {
+            final FileWriter writer = new FileWriter(fromClerkToReferent, false);
+            writer.write("");
+            for (final RequestWithReport requestWithReport : requests) {
+                final GetRequest r = requestWithReport.getRequest();
+                writer.append(String.valueOf(r.getId()))
+                        .append(":").append(r.getClientName())
+                        .append(":").append(String.valueOf(r.getValue()))
+                        .append(":").append(String.valueOf(requestWithReport.isAcceptedFromBankEmployee()))
+                        .append("\n");
+            }
+            writer.close();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+    }
+
     public static boolean saveRequest(GetRequest request) {
         FileWriter writer = null;
         try {
@@ -108,7 +155,7 @@ public class DataAccessor {
             writer.append(String.valueOf(request.getId()))
                     .append(":").append(request.getClientName())
                     .append(":").append(String.valueOf(request.getValue()))
-                    .append(":").append(clientsReport).append(String.valueOf(request.getId()))
+                    .append(":").append("false")
                     .append("\n");
             return true;
         } catch (IOException e1) {

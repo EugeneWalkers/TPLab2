@@ -1,11 +1,13 @@
 package bank.entities;
 
+import bank.boundary.DataAccessor;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ButtonCallRequestListener implements ActionListener {
+public class EmployeeAcceptListener implements ActionListener {
 
     private final RequestWithReport requestWithReport;
 
@@ -22,7 +24,7 @@ public class ButtonCallRequestListener implements ActionListener {
             }
 
             setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-            setSize(450, 350);
+            setSize(250, 150);
             setLocationRelativeTo(null);
             setLayout(new GridLayout(0, 2, 10, 10));
 
@@ -30,26 +32,13 @@ public class ButtonCallRequestListener implements ActionListener {
             add(new JLabel(String.valueOf(request.getId())));
             add(new JLabel("Client:"));
             add(new JLabel(request.getClientName()));
-            add(new JLabel("Value:"));
-            JTextField valueChanged = new JTextField();
-            valueChanged.setText(String.valueOf(request.getValue()));
-            add(valueChanged);
             add(new JLabel("Report:"));
             add(new JLabel(reportLabelText));
-            add(new JLabel("Accepted:"));
-            add(new JLabel(String.valueOf(requestWithReport.isAcceptedFromBankEmployee())));
-            JButton checkFinances = new JButton("Check finances");
-            add(checkFinances);
-            JButton ok = new JButton("Save");
+
+            JButton ok = new JButton("Accept");
             add(ok);
-            if (requestWithReport.isAcceptedFromBankEmployee()&&requestWithReport.getReport()!=null) {
-                ok.setEnabled(true);
-            } else {
-                ok.setEnabled(false);
-            }
-
             ok.addActionListener(e1 -> {
-
+                DataAccessor.acceptCopyOfTheReport(request);
                 this.dispose();
             });
         }
@@ -60,7 +49,7 @@ public class ButtonCallRequestListener implements ActionListener {
         new Reporter().setVisible(true);
     }
 
-    public ButtonCallRequestListener(RequestWithReport requestWithReport) {
+    public EmployeeAcceptListener(RequestWithReport requestWithReport) {
         this.requestWithReport = requestWithReport;
     }
 }

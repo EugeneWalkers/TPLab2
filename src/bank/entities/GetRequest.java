@@ -1,5 +1,7 @@
 package bank.entities;
 
+import java.util.Objects;
+
 public class GetRequest {
 
 	public String getClientName() {
@@ -36,4 +38,19 @@ public class GetRequest {
 	public String toString(){
 		return id + ":" + clientName + ":" + value;
 	}
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        GetRequest request = (GetRequest) o;
+        return id == request.id &&
+                value == request.value &&
+                Objects.equals(clientName, request.clientName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, clientName, value);
+    }
 }//end GetRequest
