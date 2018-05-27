@@ -1,5 +1,7 @@
 package bank.entities;
 
+import bank.boundary.DataAccessor;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -34,8 +36,9 @@ public class ButtonCallRequestListener implements ActionListener {
             JTextField valueChanged = new JTextField();
             valueChanged.setText(String.valueOf(request.getValue()));
             add(valueChanged);
+            JLabel reportLabel = new JLabel(reportLabelText);
             add(new JLabel("Report:"));
-            add(new JLabel(reportLabelText));
+            add(reportLabel);
             add(new JLabel("Accepted:"));
             add(new JLabel(String.valueOf(requestWithReport.isAcceptedFromBankEmployee())));
             JButton checkFinances = new JButton("Check finances");
@@ -51,6 +54,18 @@ public class ButtonCallRequestListener implements ActionListener {
             ok.addActionListener(e1 -> {
 
                 this.dispose();
+            });
+
+            checkFinances.addActionListener(e-> {
+                requestWithReport.setReport(
+                        DataAccessor.getReport(request.getClientName())
+                );
+                if (requestWithReport.getReport()!=null) {
+                    reportLabel.setText(requestWithReport.getReport().toString());
+                    if (requestWithReport.isAcceptedFromBankEmployee()) {
+                        ok.setEnabled(true);
+                    }
+                }
             });
         }
     }

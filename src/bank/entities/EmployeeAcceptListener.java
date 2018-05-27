@@ -15,10 +15,10 @@ public class EmployeeAcceptListener implements ActionListener {
         Reporter() {
             super("Report for " + requestWithReport.getRequest().getClientName());
             final GetRequest request = requestWithReport.getRequest();
-            final Report report = requestWithReport.getReport();
+            final Report report = DataAccessor.getReport(request.getClientName());
             final String reportLabelText;
             if (report == null) {
-                reportLabelText = "Report hasn't been attached yet :( ";
+                reportLabelText = "Report doesn't exist :( ";
             } else {
                 reportLabelText = report.toString();
             }

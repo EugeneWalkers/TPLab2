@@ -7,7 +7,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class DataAccessor {
 
@@ -15,6 +17,7 @@ public class DataAccessor {
     private static final String clientsReport = "reports/report";
     private static final String fromClerkToReferent = "FromClerkToReferent.txt";
     private static final String metadata = "metadata.txt";
+    private static final String creditDepartmentReports = "Reports";
 
     private static RequestList clientListInQueue = new RequestList();
 
@@ -98,6 +101,28 @@ public class DataAccessor {
 
     static void getRequestsToBeIssued() {
 
+    }
+
+    public static Report getReport(final String client) {
+        final Map<String, String> map = new HashMap<>();
+        final StringBuilder builder = new StringBuilder();
+        try {
+            final BufferedReader reader = new BufferedReader(new FileReader(creditDepartmentReports));
+            while (!builder.append(reader.readLine()).toString().equals("null")) {
+                final String[] temp = builder.toString().split(":");
+                map.put(temp[0], temp[1]);
+                builder.delete(0, builder.length());
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        final String text = map.get(client);
+        if (text!= null) {
+            return new Report(text);
+        } else {
+            return null;
+        }
     }
 
     public static List<RequestWithReport> getRequestsForReferent() {
@@ -330,8 +355,9 @@ public class DataAccessor {
     static boolean writeReport(int id, String text) {
         FileWriter writer = null;
         try {
-            writer = new FileWriter(clientsReport + id + ".txt", true);
+            writer = new FileWriter(clientsReport + id, true);
             writer.append(text);
+            writer.close();
             return true;
         } catch (IOException e1) {
             e1.printStackTrace();
