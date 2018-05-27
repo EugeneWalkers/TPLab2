@@ -19,7 +19,7 @@ public class ReferentFrameController {
 
 	}
 
-	public JPanel getPanelScrollPane(JPanel panel){
+	public JPanel getPanelScrollPaneForCallRequest(JPanel panel){
 		panel.removeAll();
 		for (final RequestWithReport request : DataAccessor.getRequestsForReferent()) {
 			final JButton button = new JButton(request.getRequest().toString());
@@ -29,7 +29,26 @@ public class ReferentFrameController {
 		return panel;
 	}
 
-	public void selectLoanRequest(){
+    public JPanel getPanelScrollPaneForAnalyseAndAccept(JPanel panel) {
+        panel.removeAll();
+        for (final RequestWithReport request : DataAccessor.getRequestsForReferent()) {
+            final JButton button = new JButton(request.getRequest().toString());
+            button.addActionListener(new ButtonAnalyseAndAcceptListener(request));
+            panel.add(button);
+        }
+        return panel;
+    }
+
+    public JPanel getPanelScrollPaneForCheckFinances(JPanel panel) {
+        panel.removeAll();
+        for (final RequestWithReport request : DataAccessor.getRequestsForReferent()) {
+            final JButton button = new JButton(request.getRequest().toString());
+            panel.add(button);
+        }
+        return panel;
+    }
+
+    public void selectLoanRequest(){
 
 	}
 }//end ReferentFrameController
