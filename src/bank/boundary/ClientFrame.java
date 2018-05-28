@@ -26,15 +26,16 @@ public class ClientFrame extends JFrame {
         reportWriter.setBorder(BorderFactory.createStrokeBorder(new BasicStroke(1)));
         reportWriter.setMinimumSize(new Dimension(100, 400));
         setButtons();
-        sendRequestForCredit.setEnabled(!DataAccessor.isUserInQueue(user));
+        sendRequestForCredit.setEnabled(!DataAccessor.isUserInCommon(user.getName()));
         sendRequestForCredit.addActionListener(e -> {
             if (!value.getText().equals("")
                     && DataAccessor.writeToQueue(user, Integer.parseInt(value.getText()))
-                    //&& DataAccessor.writeReport(DataAccessor.getIdByUsername(user.getName()), reportWriter.getText())
                     && DataAccessor.incrementId()) {
                 sendRequestForCredit.setEnabled(false);
                 String st = reportWriter.getText();
                 DataAccessor.createUserReport(st, user.getName());
+                DataAccessor.writeToCommonList(user.getName());
+
             }
         });
 

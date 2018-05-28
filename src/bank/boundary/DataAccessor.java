@@ -1,23 +1,25 @@
 package bank.boundary;
 
-import bank.entities.*;
+import bank.entities.GetRequest;
+import bank.entities.RequestList;
+import bank.entities.RequestWithReport;
+import bank.entities.User;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class DataAccessor {
 
-    private static final String clientsQueue = "waitingClients.txt";
-    private static final String clientsReport = "reports/report";
-    private static final String fromClerkToReferent = "FromClerkToReferent.txt";
-    private static final String metadata = "metadata.txt";
-    private static final String creditDepartmentReportsMetadata = "Credit Reports/metadata.txt";
-    private static final String creditDepartmentReports = "Credit Reports/";
-    private static final String userReportsMetadata = "User reports/metadata.txt";
-    private static final String userReports = "User reports/";
+    private static final String CLIENTS_QUEUE = "waitingClients.txt";
+    private static final String CLIENTS_REPORT = "reports/report";
+    private static final String FROM_CLERK_TO_REFERENT = "FromClerkToReferent.txt";
+    private static final String METADATA = "metadata.txt";
+    private static final String CREDIT_DEPARTMENT_REPORTS_METADATA = "Credit Reports/METADATA.txt";
+    private static final String CREDIT_DEPARTMENT_REPORTS = "Credit Reports/";
+    private static final String USER_REPORTS_METADATA = "User reports/METADATA.txt";
+    private static final String USER_REPORTS = "User reports/";
+    private static final String COMMON_LIST = "Common List.txt";
 
     private static RequestList clientListInQueue = new RequestList();
 
@@ -47,7 +49,7 @@ public class DataAccessor {
     private static void rewriteUsers() {
         FileWriter writer = null;
         try {
-            writer = new FileWriter(clientsQueue, false);
+            writer = new FileWriter(CLIENTS_QUEUE, false);
 
             ArrayList<GetRequest> requests = clientListInQueue.getmGetRequest();
             for (GetRequest request : requests) {
@@ -75,7 +77,7 @@ public class DataAccessor {
         StringBuilder builder = new StringBuilder();
         BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new FileReader(clientsQueue));
+            reader = new BufferedReader(new FileReader(CLIENTS_QUEUE));
             while (!builder.append(reader.readLine()).toString().equals("null")) {
                 String[] temp = builder.toString().split(":");
                 GetRequest request = new GetRequest(Integer.parseInt(temp[0]),
@@ -104,15 +106,14 @@ public class DataAccessor {
     }
 
     public static String getReport(final String client) {
-        final Map<String, String> map = new HashMap<>();
         final StringBuilder builder = new StringBuilder();
         StringBuilder path = new StringBuilder();
         BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new FileReader(creditDepartmentReportsMetadata));
+            reader = new BufferedReader(new FileReader(CREDIT_DEPARTMENT_REPORTS_METADATA));
             while (!builder.append(reader.readLine()).toString().equals("null")) {
                 final String[] someClient = builder.toString().split(":");
-                if (someClient[0].equals(client)){
+                if (someClient[0].equals(client)) {
                     path.append(someClient[1]);
                     builder.delete(0, builder.length());
                     break;
@@ -121,8 +122,7 @@ public class DataAccessor {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             try {
                 if (reader != null) {
                     reader.close();
@@ -135,8 +135,8 @@ public class DataAccessor {
         StringBuilder report = new StringBuilder("");
         StringBuilder temp = new StringBuilder();
         try {
-            reader = new BufferedReader(new FileReader(creditDepartmentReports + path.toString() + ".txt"));
-            while (!temp.append(reader.readLine()).toString().equals("null")){
+            reader = new BufferedReader(new FileReader(CREDIT_DEPARTMENT_REPORTS + path.toString() + ".txt"));
+            while (!temp.append(reader.readLine()).toString().equals("null")) {
                 report.append(temp.toString());
                 report.append("\n");
                 temp.delete(0, temp.length());
@@ -144,8 +144,7 @@ public class DataAccessor {
             return report.toString();
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        finally{
+        } finally {
             try {
                 if (reader != null) {
                     reader.close();
@@ -158,15 +157,14 @@ public class DataAccessor {
     }
 
     public static String getUserReport(final String client) {
-        final Map<String, String> map = new HashMap<>();
         final StringBuilder builder = new StringBuilder();
         StringBuilder path = new StringBuilder();
         BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new FileReader(userReportsMetadata));
+            reader = new BufferedReader(new FileReader(USER_REPORTS_METADATA));
             while (!builder.append(reader.readLine()).toString().equals("null")) {
                 final String[] someClient = builder.toString().split(":");
-                if (someClient[0].equals(client)){
+                if (someClient[0].equals(client)) {
                     path.append(someClient[1]);
                     builder.delete(0, builder.length());
                     break;
@@ -175,8 +173,7 @@ public class DataAccessor {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             try {
                 if (reader != null) {
                     reader.close();
@@ -189,8 +186,8 @@ public class DataAccessor {
         StringBuilder report = new StringBuilder("");
         StringBuilder temp = new StringBuilder();
         try {
-            reader = new BufferedReader(new FileReader(userReports + path.toString() + ".txt"));
-            while (!temp.append(reader.readLine()).toString().equals("null")){
+            reader = new BufferedReader(new FileReader(USER_REPORTS + path.toString() + ".txt"));
+            while (!temp.append(reader.readLine()).toString().equals("null")) {
                 report.append(temp.toString());
                 report.append("\n");
                 temp.delete(0, temp.length());
@@ -198,8 +195,7 @@ public class DataAccessor {
             return report.toString();
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        finally{
+        } finally {
             try {
                 if (reader != null) {
                     reader.close();
@@ -210,6 +206,7 @@ public class DataAccessor {
         }
         return null;
     }
+
     public static String createUserReport(final String rep, final String client) {
 
         final StringBuilder builder = new StringBuilder();
@@ -218,43 +215,20 @@ public class DataAccessor {
         BufferedReader reader = null;
 
         try {
-            reader = new BufferedReader(new FileReader(userReportsMetadata));
-            boolean bool=true;
-            ArrayList<String> somePaths = new ArrayList<>();
-            ArrayList<String> someClients = new ArrayList<>();
-            while (!builder.append(reader.readLine()).toString().equals("null")) {
-                final String[] someClient = builder.toString().split(":");
-                someClients.add(someClient[0]);
-                somePaths.add(someClient[1]);
-                if (someClient[0].equals(client)){
-                    path.append(someClient[1]);
-                    bool=!bool;
-                    builder.delete(0, builder.length());
-                    break;
-                }
-                builder.delete(0, builder.length());
-            }
-            if(bool){
-                FileWriter fw = new FileWriter(userReportsMetadata);
-
-                BufferedWriter out1 = new BufferedWriter(fw);
-                for(int i=0;i<someClients.size();i++){
-
-                    out1.append(someClients.get(i)).append(":").append(somePaths.get(i)).append("\n");
-                }
-                out1.append(client).append(":").append("report"+id);
-                path=new StringBuilder(client);
-                out1.close();
-            }
+            FileWriter fw = new FileWriter(USER_REPORTS_METADATA, true);
+            BufferedWriter out1 = new BufferedWriter(fw);
+            out1.append(client).append(":").append("report" + id);
+            path = new StringBuilder("report" + id);
+            out1.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        File ff = new File(userReports + path.toString() + ".txt");
+        File ff = new File(USER_REPORTS + path.toString() + ".txt");
         if ((ff.exists())) {
             FileWriter fstream1 = null;
             try {
-                fstream1 = new FileWriter(userReports + path.toString() + ".txt");
+                fstream1 = new FileWriter(USER_REPORTS + path.toString() + ".txt");
 
                 BufferedWriter out1 = new BufferedWriter(fstream1);
                 out1.write("");
@@ -269,7 +243,7 @@ public class DataAccessor {
                 ff.createNewFile();
                 FileWriter fstream1 = null;
                 try {
-                    fstream1 = new FileWriter(userReports + path.toString() + ".txt");
+                    fstream1 = new FileWriter(USER_REPORTS + path.toString() + ".txt");
 
                     BufferedWriter out1 = new BufferedWriter(fstream1);
                     out1.write("");
@@ -291,14 +265,14 @@ public class DataAccessor {
         final List<RequestWithReport> result = new ArrayList<>();
         final StringBuilder builder = new StringBuilder();
         try {
-            final BufferedReader reader = new BufferedReader(new FileReader(fromClerkToReferent));
+            final BufferedReader reader = new BufferedReader(new FileReader(FROM_CLERK_TO_REFERENT));
             while (!builder.append(reader.readLine()).toString().equals("null")) {
                 final String[] temp = builder.toString().split(":");
 
                 result.add(new RequestWithReport(
                         new GetRequest(Integer.parseInt(temp[0]),
-                        temp[1],
-                        Integer.parseInt(temp[2])),
+                                temp[1],
+                                Integer.parseInt(temp[2])),
                         Boolean.parseBoolean(temp[3]),
                         Boolean.parseBoolean(temp[4])
                 ));
@@ -320,7 +294,7 @@ public class DataAccessor {
             }
         }
         try {
-            final FileWriter writer = new FileWriter(fromClerkToReferent, false);
+            final FileWriter writer = new FileWriter(FROM_CLERK_TO_REFERENT, false);
             writer.write("");
             for (final RequestWithReport requestWithReport : requests) {
                 final GetRequest r = requestWithReport.getRequest();
@@ -347,7 +321,7 @@ public class DataAccessor {
             }
         }
         try {
-            final FileWriter writer = new FileWriter(fromClerkToReferent, false);
+            final FileWriter writer = new FileWriter(FROM_CLERK_TO_REFERENT, false);
             writer.write("");
             for (final RequestWithReport requestWithReport : requests) {
                 final GetRequest r = requestWithReport.getRequest();
@@ -367,7 +341,7 @@ public class DataAccessor {
     public static boolean saveRequest(GetRequest request) {
         FileWriter writer = null;
         try {
-            writer = new FileWriter(fromClerkToReferent, true);
+            writer = new FileWriter(FROM_CLERK_TO_REFERENT, true);
             writer.append(String.valueOf(request.getId()))
                     .append(":").append(request.getClientName())
                     .append(":").append(String.valueOf(request.getValue()))
@@ -391,10 +365,10 @@ public class DataAccessor {
         return false;
     }
 
-    private static boolean writeUsersInQueueFromList(){
+    private static boolean writeUsersInQueueFromList() {
         FileWriter writer = null;
         try {
-            writer = new FileWriter(clientsQueue, false);
+            writer = new FileWriter(CLIENTS_QUEUE, false);
             writer.write(clientListInQueue.toString());
             return true;
         } catch (IOException e1) {
@@ -442,7 +416,7 @@ public class DataAccessor {
         FileWriter writer = null;
         try {
             id = getLastId() + 1;
-            writer = new FileWriter(clientsQueue, true);
+            writer = new FileWriter(CLIENTS_QUEUE, true);
             writer.append(String.valueOf(id))
                     .append(":")
                     .append(user.getName()).append(":")
@@ -466,7 +440,7 @@ public class DataAccessor {
     private static int getLastId() {
         BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new FileReader(metadata));
+            reader = new BufferedReader(new FileReader(METADATA));
             id = Integer.parseInt(reader.readLine());
             return id;
         } catch (IOException e) {
@@ -487,7 +461,7 @@ public class DataAccessor {
         StringBuilder builder = new StringBuilder("");
         BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new FileReader(clientsQueue));
+            reader = new BufferedReader(new FileReader(CLIENTS_QUEUE));
             while (!builder.append(reader.readLine()).toString().equals("null")) {
                 if (builder.toString().split(":")[1].equals(user.getName())) {
                     return true;
@@ -521,7 +495,7 @@ public class DataAccessor {
         StringBuilder builder = new StringBuilder("");
         BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new FileReader(clientsQueue));
+            reader = new BufferedReader(new FileReader(CLIENTS_QUEUE));
             while (!builder.append(reader.readLine()).toString().equals("null")) {
                 if (builder.toString().split(":")[1].equals(username)) {
                     return Integer.parseInt(builder.toString().split(":")[0]);
@@ -547,7 +521,7 @@ public class DataAccessor {
     static boolean writeReport(int id, String text) {
         FileWriter writer = null;
         try {
-            writer = new FileWriter(clientsReport + id, true);
+            writer = new FileWriter(CLIENTS_REPORT + id, true);
             writer.append(text);
             writer.close();
             return true;
@@ -565,11 +539,11 @@ public class DataAccessor {
         return false;
     }
 
-    static boolean incrementId(){
+    static boolean incrementId() {
         FileWriter writer = null;
         id = getLastId();
         try {
-            writer = new FileWriter(metadata, false);
+            writer = new FileWriter(METADATA, false);
             writer.write(String.valueOf(id + 1));
             return true;
         } catch (IOException e1) {
@@ -582,6 +556,55 @@ public class DataAccessor {
                     e1.printStackTrace();
                 }
             }
+            id++;
+        }
+        return false;
+    }
+
+    public static boolean writeToCommonList(String username){
+        FileWriter writer = null;
+        try {
+            writer = new FileWriter(COMMON_LIST, false);
+            writer.append(username).append("\n");
+            return true;
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        } finally {
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+            id++;
+        }
+        return false;
+    }
+
+    public static boolean isUserInCommon(String username){
+        StringBuilder builder = new StringBuilder();
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(COMMON_LIST));
+            while (!builder.append(reader.readLine()).toString().equals("null")) {
+                if (builder.toString().equals(username)) {
+                    return true;
+                }
+                builder.delete(0, builder.length());
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
         }
         return false;
     }
