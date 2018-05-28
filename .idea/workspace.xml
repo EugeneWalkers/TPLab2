@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b46a6e-be1d-44b3-8ee0-c2258fcaad88" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/User reports/metadata.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User reports/report0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User reports/report1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User reports/report17.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User reports/report2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FromClerkToReferent.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FromClerkToReferent.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User reports/report0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User reports/report1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User reports/report17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User reports/report2.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/metadata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/metadata.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/ClientFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/ClientFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/DataAccessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/DataAccessor.class" afterDir="false" />
@@ -25,11 +23,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/entities/GetRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/entities/GetRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/entities/RequestList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/entities/RequestList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/entities/RequestWithReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/entities/RequestWithReport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/boundary/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/boundary/ClientFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/boundary/DataAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/boundary/DataAccessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/entities/ButtonCallRequestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/entities/ButtonCallRequestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/entities/RequestWithReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/entities/RequestWithReport.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,31 +36,23 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="FromClerkToReferent.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FromClerkToReferent.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="report0.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Credit Reports/report0.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ButtonCallRequestListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bank/entities/ButtonCallRequestListener.java">
+      <file leaf-file-name="report1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Credit Reports/report1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-              <folding>
-                <element signature="e#3094#3095#0" expanded="true" />
-                <element signature="e#3141#3142#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeAcceptListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -76,16 +61,31 @@
         <entry file="file://$PROJECT_DIR$/metadata.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="waitingClients.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waitingClients.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="List Of Users with Credit.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/List Of Users with Credit.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="metadata.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/User reports/metadata.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="ClientFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bank/boundary/ClientFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-760">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="280">
+              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,47 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="misc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="report17.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User reports/report17.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="RequestWithReport.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/bank/entities/RequestWithReport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="report2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User reports/report2.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="DataAccessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bank/boundary/DataAccessor.java">
+        <entry file="file://$PROJECT_DIR$/Credit Reports/report2.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="289" column="14" selection-start-line="289" selection-start-column="14" selection-end-line="289" selection-end-column="14" />
-              <folding>
-                <element signature="method#rewriteUsers#0;class#DataAccessor#0" />
-                <element signature="method#getRequestsToBeIssued#0;class#DataAccessor#0" />
-                <element signature="method#writeUsersInQueueFromList#0;class#DataAccessor#0" />
-                <element signature="method#userExists#0;class#DataAccessor#0" />
-                <element signature="method#writeToQueue#0;class#DataAccessor#0" />
-                <element signature="method#getIdByUsername#0;class#DataAccessor#0" />
-              </folding>
+            <state>
+              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -204,17 +168,17 @@
         <option value="$PROJECT_DIR$/src/bank/controllers/EmployeeFrameController.java" />
         <option value="$PROJECT_DIR$/src/bank/boundary/EmployeeFrame.java" />
         <option value="$PROJECT_DIR$/User reports/report1.txt" />
-        <option value="$PROJECT_DIR$/User reports/metadata.txt" />
         <option value="$PROJECT_DIR$/User reports/report0.txt" />
         <option value="$PROJECT_DIR$/waitingClients.txt" />
-        <option value="$PROJECT_DIR$/FromClerkToReferent.txt" />
         <option value="$PROJECT_DIR$/src/bank/entities/ButtonCallRequestListener.java" />
-        <option value="$PROJECT_DIR$/metadata.txt" />
         <option value="$PROJECT_DIR$/src/bank/boundary/ClientFrame.java" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/src/bank/boundary/DataAccessor.java" />
         <option value="$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java" />
         <option value="$PROJECT_DIR$/src/bank/entities/RequestWithReport.java" />
+        <option value="$PROJECT_DIR$/FromClerkToReferent.txt" />
+        <option value="$PROJECT_DIR$/metadata.txt" />
+        <option value="$PROJECT_DIR$/User reports/metadata.txt" />
       </list>
     </option>
   </component>
@@ -326,39 +290,7 @@
             <path>
               <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab2" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bank" type="462c0819:PsiDirectoryNode" />
-              <item name="boundary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bank" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bank" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="User reports" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -379,14 +311,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\��\Lab2\src" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Anton Gondon\Desktop\����� �����\TPLab2-master\User reports" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\��\Lab2\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -497,12 +429,12 @@
       <workItem from="1527446906562" duration="7255000" />
       <workItem from="1527454305987" duration="6391000" />
       <workItem from="1527507614583" duration="267000" />
-      <workItem from="1527512953532" duration="208000" />
+      <workItem from="1527512953532" duration="2054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75009000" />
+    <option name="totallyTimeSpent" value="76855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -517,7 +449,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33443707" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33378932" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="2" />
@@ -618,8 +550,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/javax/swing/text/JTextComponent.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/FileWriter.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/Writer.java" />
     <entry file="file://$PROJECT_DIR$/src/bank/controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -633,13 +563,6 @@
     <entry file="file://$PROJECT_DIR$/src/bank/reports/report0" />
     <entry file="file://$PROJECT_DIR$/src/bank/reports/report1" />
     <entry file="file://$PROJECT_DIR$/src/bank/reports/report2" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="1098" column="10" selection-start-line="1098" selection-start-column="10" selection-end-line="1098" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FromReferentToBankEmployee" />
     <entry file="file://$PROJECT_DIR$/Finances" />
     <entry file="file://$PROJECT_DIR$/src/bank/entities/ButtonCheckFinancesListener.java" />
@@ -709,13 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Credit Reports/report2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Credit Reports/metadata.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -744,20 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Credit Reports/report0.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Credit Reports/report1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bank/entities/GetRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-63">
@@ -779,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User reports/metadata.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/User reports/report1.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -803,50 +698,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waitingClients.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logins.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/User reports/report17.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/User reports/report2.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FromClerkToReferent.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metadata.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/boundary/ClientFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-760">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -879,16 +737,90 @@
     <entry file="file://$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bank/entities/RequestWithReport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logins.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/boundary/ClientFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19720">
+          <caret line="986" column="10" selection-start-line="986" selection-start-column="10" selection-end-line="986" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waitingClients.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List Of Users with Credit.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credit Reports/report0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credit Reports/report1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credit Reports/report2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FromClerkToReferent.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User reports/report17.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User reports/metadata.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
