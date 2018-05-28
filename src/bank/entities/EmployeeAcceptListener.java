@@ -17,12 +17,20 @@ public class EmployeeAcceptListener implements ActionListener {
             super("Report for " + requestWithReport.getRequest().getClientName());
             final GetRequest request = requestWithReport.getRequest();
             final String report = DataAccessor.getReport(request.getClientName());
+            final String userReport = DataAccessor.getUserReport(request.getClientName());
             final String reportLabelText;
+            final String userReportLabelText;
             if (report == null) {
                 reportLabelText = "Report doesn't exist :( ";
             } else {
                 reportLabelText = report;
             }
+            if (userReport == null) {
+                userReportLabelText = "Report doesn't exist :( ";
+            } else {
+                userReportLabelText = userReport;
+            }
+
 
             setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             setSize(250, 150);
@@ -35,6 +43,8 @@ public class EmployeeAcceptListener implements ActionListener {
             add(new JLabel(request.getClientName()));
             add(new JLabel("Report:"));
             add(new JLabel(reportLabelText));
+            add(new JLabel("userReport:"));
+            add(new JLabel(userReportLabelText));
 
             JButton ok = new JButton("Accept");
             add(ok);

@@ -3,6 +3,7 @@ package bank.entities;
 public class RequestWithReport {
     private final GetRequest request;
     private String report;
+    private String userReport;
     private boolean isRedirectedToBankEmployee;
     private boolean isAcceptedFromBankEmployee;
 
@@ -21,9 +22,19 @@ public class RequestWithReport {
     public void setReport(String report) {
         this.report = report;
     }
+    public void setReports(String report, String ureport) {
+        this.userReport = ureport;
+        this.report = report;
+    }
+    public void setUserReport(String report) {
+        this.userReport = report;
+    }
 
     public String getReport() {
         return report;
+    }
+    public String getUserReport() {
+        return userReport;
     }
 
     public boolean isAcceptedFromBankEmployee() {

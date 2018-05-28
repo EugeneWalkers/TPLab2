@@ -16,6 +16,8 @@ public class DataAccessor {
     private static final String metadata = "metadata.txt";
     private static final String creditDepartmentReportsMetadata = "Credit Reports/metadata.txt";
     private static final String creditDepartmentReports = "Credit Reports/";
+    private static final String userReportsMetadata = "User reports/metadata.txt";
+    private static final String userReports = "User reports/";
 
     private static RequestList clientListInQueue = new RequestList();
 
@@ -152,6 +154,136 @@ public class DataAccessor {
                 e.printStackTrace();
             }
         }
+        return null;
+    }
+
+    public static String getUserReport(final String client) {
+        final Map<String, String> map = new HashMap<>();
+        final StringBuilder builder = new StringBuilder();
+        StringBuilder path = new StringBuilder();
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(userReportsMetadata));
+            while (!builder.append(reader.readLine()).toString().equals("null")) {
+                final String[] someClient = builder.toString().split(":");
+                if (someClient[0].equals(client)){
+                    path.append(someClient[1]);
+                    builder.delete(0, builder.length());
+                    break;
+                }
+                builder.delete(0, builder.length());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        reader = null;
+        StringBuilder report = new StringBuilder("");
+        StringBuilder temp = new StringBuilder();
+        try {
+            reader = new BufferedReader(new FileReader(userReports + path.toString() + ".txt"));
+            while (!temp.append(reader.readLine()).toString().equals("null")){
+                report.append(temp.toString());
+                report.append("\n");
+                temp.delete(0, temp.length());
+            }
+            return report.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally{
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
+    public static String createUserReport(final String rep, final String client) {
+
+        final StringBuilder builder = new StringBuilder();
+        StringBuilder path = new StringBuilder();
+
+        BufferedReader reader = null;
+
+        try {
+            reader = new BufferedReader(new FileReader(userReportsMetadata));
+            boolean bool=true;
+            ArrayList<String> somePaths = new ArrayList<>();
+            ArrayList<String> someClients = new ArrayList<>();
+            while (!builder.append(reader.readLine()).toString().equals("null")) {
+                final String[] someClient = builder.toString().split(":");
+                someClients.add(someClient[0]);
+                somePaths.add(someClient[1]);
+                if (someClient[0].equals(client)){
+                    path.append(someClient[1]);
+                    bool=!bool;
+                    builder.delete(0, builder.length());
+                    break;
+                }
+                builder.delete(0, builder.length());
+            }
+            if(bool){
+                FileWriter fw = new FileWriter(userReportsMetadata);
+
+                BufferedWriter out1 = new BufferedWriter(fw);
+                for(int i=0;i<someClients.size();i++){
+
+                    out1.append(someClients.get(i)).append(":").append(somePaths.get(i)).append("\n");
+                }
+                out1.append(client).append(":").append("report"+id);
+                path=new StringBuilder(client);
+                out1.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        File ff = new File(userReports + path.toString() + ".txt");
+        if ((ff.exists())) {
+            FileWriter fstream1 = null;
+            try {
+                fstream1 = new FileWriter(userReports + path.toString() + ".txt");
+
+                BufferedWriter out1 = new BufferedWriter(fstream1);
+                out1.write("");
+                out1.append(rep);
+                out1.close();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            try {
+                ff.createNewFile();
+                FileWriter fstream1 = null;
+                try {
+                    fstream1 = new FileWriter(userReports + path.toString() + ".txt");
+
+                    BufferedWriter out1 = new BufferedWriter(fstream1);
+                    out1.write("");
+                    out1.append(rep);
+                    out1.close();
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
         return null;
     }
 

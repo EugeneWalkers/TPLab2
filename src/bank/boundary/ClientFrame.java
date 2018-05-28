@@ -33,6 +33,8 @@ public class ClientFrame extends JFrame {
                     //&& DataAccessor.writeReport(DataAccessor.getIdByUsername(user.getName()), reportWriter.getText())
                     && DataAccessor.incrementId()) {
                 sendRequestForCredit.setEnabled(false);
+                String st =reportWriter.getText();
+                DataAccessor.createUserReport(st, user.getName());
             }
         });
 

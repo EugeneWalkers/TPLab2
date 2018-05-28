@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b46a6e-be1d-44b3-8ee0-c2258fcaad88" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/User reports/metadata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User reports/report0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User reports/report1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User reports/report17.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User reports/report2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FromClerkToReferent.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FromClerkToReferent.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metadata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/metadata.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/ClientFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/ClientFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/DataAccessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/DataAccessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/boundary/LoginForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/ClerkFrameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/ClerkFrameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/EmployeeFrameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/EmployeeFrameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/ReferentFrameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/controllers/ReferentFrameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/entities/ButtonCallRequestListener$Reporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/entities/ButtonCallRequestListener$Reporter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/entities/ButtonCallRequestListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/entities/ButtonCallRequestListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/entities/EmployeeAcceptListener$Reporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/entities/EmployeeAcceptListener$Reporter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/entities/EmployeeAcceptListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/entities/EmployeeAcceptListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/entities/GetRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/entities/GetRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/entities/RequestList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/entities/RequestList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab2/bank/entities/RequestWithReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab2/bank/entities/RequestWithReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/boundary/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/boundary/ClientFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/boundary/DataAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/boundary/DataAccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/entities/ButtonCallRequestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/entities/ButtonCallRequestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/entities/RequestWithReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/entities/RequestWithReport.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,20 +41,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Lab2.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lab2.iml">
+      <file leaf-file-name="FromClerkToReferent.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FromClerkToReferent.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state>
+              <caret column="24" selection-start-column="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logins.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logins.txt">
+      <file leaf-file-name="ButtonCallRequestListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bank/entities/ButtonCallRequestListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="160">
+              <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+              <folding>
+                <element signature="e#3094#3095#0" expanded="true" />
+                <element signature="e#3141#3142#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeAcceptListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -36,44 +76,64 @@
         <entry file="file://$PROJECT_DIR$/metadata.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataAccessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bank/boundary/DataAccessor.java">
+      <file leaf-file-name="ClientFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bank/boundary/ClientFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="-760">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
-                <element signature="method#setRequest#0;class#DataAccessor#0" />
-                <element signature="method#rewriteUsers#0;class#DataAccessor#0" />
-                <element signature="method#getRequestsToBeIssued#0;class#DataAccessor#0" />
-                <element signature="method#writeUsersInQueueFromList#0;class#DataAccessor#0" />
-                <element signature="method#userExists#0;class#DataAccessor#0" />
-                <element signature="method#writeToQueue#0;class#DataAccessor#0" />
-                <element signature="method#isUserInQueue#0;class#DataAccessor#0" />
-                <element signature="method#getIdByUsername#0;class#DataAccessor#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bank/Main.java">
+      <file leaf-file-name="misc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <file leaf-file-name="report17.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/User reports/report17.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="RequestWithReport.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bank/entities/RequestWithReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="340">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report2.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/User reports/report2.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="DataAccessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bank/boundary/DataAccessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="289" column="14" selection-start-line="289" selection-start-column="14" selection-end-line="289" selection-end-column="14" />
+              <folding>
+                <element signature="method#rewriteUsers#0;class#DataAccessor#0" />
+                <element signature="method#getRequestsToBeIssued#0;class#DataAccessor#0" />
+                <element signature="method#writeUsersInQueueFromList#0;class#DataAccessor#0" />
+                <element signature="method#userExists#0;class#DataAccessor#0" />
+                <element signature="method#writeToQueue#0;class#DataAccessor#0" />
+                <element signature="method#getIdByUsername#0;class#DataAccessor#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,6 +150,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Classes.Controllers</find>
+      <find>Get r</find>
+      <find>creditDepartmentReports</find>
+      <find>someClient</find>
+      <find>wr</find>
+      <find>nam</find>
+      <find>wri</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,9 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/boundary/LoginForm.java" />
-        <option value="$PROJECT_DIR$/src/boundary/CallRequest.java" />
-        <option value="$PROJECT_DIR$/src/boundary/AcceptCopyOfTheRequest.java" />
         <option value="$PROJECT_DIR$/src/boundary/InspectorFrame.java" />
         <option value="$PROJECT_DIR$/src/boundary/EditRequest.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
@@ -127,28 +190,31 @@
         <option value="$PROJECT_DIR$/gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/bank/entities/CreditDepartment.java" />
-        <option value="$PROJECT_DIR$/src/bank/boundary/ClientFrame.java" />
         <option value="$PROJECT_DIR$/Finances" />
         <option value="$PROJECT_DIR$/src/bank/boundary/ReferentFrame.java" />
         <option value="$PROJECT_DIR$/src/bank/entities/ButtonCheckFinancesListener.java" />
         <option value="$PROJECT_DIR$/src/bank/entities/ButtonAnalyseAndAcceptListener.java" />
         <option value="$PROJECT_DIR$/Reports" />
-        <option value="$PROJECT_DIR$/waitingClients.txt" />
         <option value="$PROJECT_DIR$/Credit Reports/metadata.txt" />
         <option value="$PROJECT_DIR$/Credit Reports/report0.txt" />
         <option value="$PROJECT_DIR$/Credit Reports/report1.txt" />
         <option value="$PROJECT_DIR$/Credit Reports/report2.txt" />
-        <option value="$PROJECT_DIR$/src/bank/entities/RequestWithReport.java" />
         <option value="$PROJECT_DIR$/src/bank/boundary/ClerkFrame.java" />
         <option value="$PROJECT_DIR$/src/bank/controllers/ReferentFrameController.java" />
         <option value="$PROJECT_DIR$/src/bank/controllers/EmployeeFrameController.java" />
-        <option value="$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java" />
         <option value="$PROJECT_DIR$/src/bank/boundary/EmployeeFrame.java" />
-        <option value="$PROJECT_DIR$/src/bank/entities/ButtonCallRequestListener.java" />
+        <option value="$PROJECT_DIR$/User reports/report1.txt" />
+        <option value="$PROJECT_DIR$/User reports/metadata.txt" />
+        <option value="$PROJECT_DIR$/User reports/report0.txt" />
+        <option value="$PROJECT_DIR$/waitingClients.txt" />
         <option value="$PROJECT_DIR$/FromClerkToReferent.txt" />
+        <option value="$PROJECT_DIR$/src/bank/entities/ButtonCallRequestListener.java" />
         <option value="$PROJECT_DIR$/metadata.txt" />
+        <option value="$PROJECT_DIR$/src/bank/boundary/ClientFrame.java" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/src/bank/boundary/DataAccessor.java" />
-        <option value="$PROJECT_DIR$/src/bank/Main.java" />
+        <option value="$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java" />
+        <option value="$PROJECT_DIR$/src/bank/entities/RequestWithReport.java" />
       </list>
     </option>
   </component>
@@ -257,6 +323,43 @@
               <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+              <item name="boundary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -273,13 +376,17 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\��\Lab2\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anton Gondon\Desktop\����� �����\TPLab2-master\User reports" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\ТП\Lab2\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -386,46 +493,79 @@
       <workItem from="1527073427244" duration="6127000" />
       <workItem from="1527267752853" duration="4143000" />
       <workItem from="1527311617321" duration="18167000" />
-      <workItem from="1527440389416" duration="8142000" />
-      <workItem from="1527503705456" duration="2275000" />
+      <workItem from="1527440389416" duration="4081000" />
+      <workItem from="1527446906562" duration="7255000" />
+      <workItem from="1527454305987" duration="6391000" />
+      <workItem from="1527507614583" duration="267000" />
+      <workItem from="1527512953532" duration="208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67224000" />
+    <option name="totallyTimeSpent" value="75009000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32831737" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289183" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3299435" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32831737" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Capture Tool" order="6" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33443707" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20052083" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4370861" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39887005" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32831737" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289183" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4370861" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289183" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -461,37 +601,23 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/bank/boundary/DataAccessor.java</url>
+          <line>247</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="33" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((JButton)this).disabledIcon" custom="javax.swing.JButton" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lab2.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logins.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metadata.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/java/awt/GridBagConstraints.java" />
-    <entry file="file://$PROJECT_DIR$/src/bank/entities/ButtonCreateRequestListener.java" />
-    <entry file="file://$PROJECT_DIR$/reports/report0.txt" />
-    <entry file="file://$PROJECT_DIR$/reports/report1.txt" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/awt/Component.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/awt/Window.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/javax/swing/text/JTextComponent.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/FileWriter.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/Writer.java" />
@@ -507,62 +633,20 @@
     <entry file="file://$PROJECT_DIR$/src/bank/reports/report0" />
     <entry file="file://$PROJECT_DIR$/src/bank/reports/report1" />
     <entry file="file://$PROJECT_DIR$/src/bank/reports/report2" />
-    <entry file="file://$PROJECT_DIR$/src/bank/boundary/ClientFrame.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/entities/GetRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/boundary/LoginForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="490">
+          <caret line="1098" column="10" selection-start-line="1098" selection-start-column="10" selection-end-line="1098" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FromReferentToBankEmployee" />
     <entry file="file://$PROJECT_DIR$/Finances" />
     <entry file="file://$PROJECT_DIR$/src/bank/entities/ButtonCheckFinancesListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/bank/entities/User.java">
+    <entry file="file://$PROJECT_DIR$/src/bank/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Credit Reports/report2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Credit Reports/report1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Credit Reports/report0.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/entities/ButtonAnalyseAndAcceptListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="84">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -582,21 +666,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bank/entities/Report.java" />
-    <entry file="file://$PROJECT_DIR$/src/bank/entities/RequestWithReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Reports" />
-    <entry file="file://$PROJECT_DIR$/Credit Reports/metadata.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bank/entities/ButtonEditListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -618,24 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-          <folding>
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/controllers/ReferentFrameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bank/controllers/EmployeeFrameController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -643,79 +695,198 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/bank/boundary/EmployeeFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        <state relative-caret-position="259">
+          <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credit Reports/report2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credit Reports/metadata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/entities/ButtonAnalyseAndAcceptListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/controllers/ReferentFrameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bank/boundary/ReferentFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="210">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/entities/ButtonCallRequestListener.java">
+    <entry file="file://$PROJECT_DIR$/Credit Reports/report0.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab2.iml">
+    <entry file="file://$PROJECT_DIR$/Credit Reports/report1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/entities/GetRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="6332" column="14" lean-forward="true" selection-start-line="6332" selection-start-column="14" selection-end-line="6332" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User reports/metadata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User reports/report1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/boundary/LoginForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User reports/report0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waitingClients.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/logins.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User reports/report17.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User reports/report2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FromClerkToReferent.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/metadata.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/boundary/ClientFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-760">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bank/boundary/DataAccessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="525">
+          <caret line="289" column="14" selection-start-line="289" selection-start-column="14" selection-end-line="289" selection-end-column="14" />
           <folding>
-            <element signature="method#setRequest#0;class#DataAccessor#0" />
             <element signature="method#rewriteUsers#0;class#DataAccessor#0" />
             <element signature="method#getRequestsToBeIssued#0;class#DataAccessor#0" />
             <element signature="method#writeUsersInQueueFromList#0;class#DataAccessor#0" />
             <element signature="method#userExists#0;class#DataAccessor#0" />
             <element signature="method#writeToQueue#0;class#DataAccessor#0" />
-            <element signature="method#isUserInQueue#0;class#DataAccessor#0" />
             <element signature="method#getIdByUsername#0;class#DataAccessor#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/bank/entities/ButtonCallRequestListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="160">
+          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <folding>
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3141#3142#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/bank/entities/EmployeeAcceptListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="201">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/entities/RequestWithReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
@@ -759,7 +930,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>9.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
